@@ -15,7 +15,8 @@ const Profile = () => {
         </div>
         <div className="aboutMe content-style">
           <h1 className="text-center">Hi, I am Velraaj. <br />
-          <span className="text-[#D3DAD9]"> Junior .NET Developer </span>
+          <span className="text-[#D3DAD9]"> Junior .NET Developer </span> <br />
+          <span className="text-[#D3DAD9]"> I press buttons and things happen </span>
           </h1>
         </div>
       </div>
