@@ -17,6 +17,7 @@ const HomePage = () => {
           <Spacer/>
           <Spacer/>
           <AboutSection/>
+          <Spacer/>
         </div>
       </main>
     </>
