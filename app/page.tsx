@@ -4,6 +4,8 @@ import Profile from "./components/ProfileSection";
 import Spacer from "./components/Spacer";
 import HeroMarquee from "./components/Marquee";
 import AboutSection from "./components/AboutSection";
+import ProjectSection from "./components/ProjectSection";
+import TechSection from "./components/TechSection";
 
 const HomePage = () => {
   return (
@@ -18,6 +20,9 @@ const HomePage = () => {
           <Spacer/>
           <AboutSection/>
           <Spacer/>
+          <Spacer/>
+          <Spacer/>
+          <TechSection/>
         </div>
       </main>
     </>

@@ -20,7 +20,7 @@ const AboutSection = () => {
 </html>`;
   return (
     <>
-      <div className="about flex flex-col gap-1 container w-[880px]">
+      <div className="about flex flex-col gap-2 container w-[880px]">
         <div className="firstRow flex items-center justify-center gap-2 content-style">
           <div className="left basis-1/2 bg-[#f7f7f7] rounded-4xl p-6">
             <h2 className="max-w-[320px] leading-10">
@@ -103,17 +103,17 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="secondRow flex items-center justify-center gap-2 content-style">
-          <div className="left basis-1/3 flex flex-col items-start justify-between bg-[#f7f7f7] rounded-4xl px-7 py-8 aspect-[1]">
-            <div className="pill rounded-4xl">
-              <span className="text-[#00000080] text-xs">What I Do</span>
+        <div className="secondRow flex items-center justify-center gap-2 content-style ">
+          <div className="left basis-1/3 bg-[#f7f7f7] rounded-4xl px-7 py-8">
+            <div className="content flex flex-col items-start justify-between aspect-[1]">
+              <div className="pill rounded-4xl">
+                <span className="text-[#00000080] text-xs">What I Do</span>
+              </div>
+              <h3>Focused on fast builds, clean code, and smart design</h3>
             </div>
-            <h3>
-              Focused on fast builds, clean code, and smart design
-            </h3>
           </div>
-          <div className="right flex basis-2/3 bg-[#f7f7f7] rounded-4xl px-7 pt-8">
-            <div className="growth-card-content flex flex-col items-center justify-between aspect-[1] pb-8">
+          <div className="right flex items-end basis-2/3 bg-[#f7f7f7] rounded-4xl px-7 pt-8">
+            <div className="growth-card-content flex flex-col items-start justify-between aspect-[1] pb-7">
               <div className="pill rounded-4xl">
                 <span className="text-[#00000080] text-xs">
                   Always Learning
@@ -122,7 +122,11 @@ const AboutSection = () => {
               <h3>Exploring Next.js & Rust</h3>
             </div>
             <div className="growth-card-image-wrapper w-[250px] h-[250px]">
-              <img src="/images/avatar3.avif" alt="avatar3" className="w-[250px] h-[250px]"/>
+              <img
+                src="/images/avatar3.avif"
+                alt="avatar3"
+                className="w-full h-full object-cover block"
+              />
             </div>
           </div>
         </div>

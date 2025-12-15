@@ -101,10 +101,55 @@ pre code {
   height: 8px;
 }
 
-.pill{
+.secondRow .left {
+  height: -webkit-fill-available;
+}
+
+.pill {
   background-color: #fff;
   display: inline-block;
   padding: 5px 10px 5px 10px;
+}
+
+.tech-section-content p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tech-header {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #00000059;
+  font-weight: 600;
+}
+
+.tech-list{
+  display: flex;
+  flex-direction: column;
+}
+
+.tech-blocks{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.tech-blocks::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.tech-block-content span{
+  font-size: 14px;
+  color: #00000059;
+  font-weight: 600;
 }
 
 @media (max-width: 767px) {
