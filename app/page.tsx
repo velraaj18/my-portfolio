@@ -6,6 +6,7 @@ import HeroMarquee from "./components/Marquee";
 import AboutSection from "./components/AboutSection";
 import ProjectSection from "./components/ProjectSection";
 import TechSection from "./components/TechSection";
+import AchievementsSection from "./components/AchievementsSection";
 
 const HomePage = () => {
   return (
@@ -27,6 +28,10 @@ const HomePage = () => {
           <Spacer/>
           <Spacer/>
           <ProjectSection />
+          <Spacer/>
+          <Spacer/>
+          <Spacer/>
+          <AchievementsSection/>
           <Spacer/>
           <Spacer/>
           <Spacer/>

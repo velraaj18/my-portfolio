@@ -75,7 +75,7 @@ h2 > span {
     var(--transparent-grey),
     var(--grey)
   );
-  width: 136px;
+  max-width: 136px;
   height: 100%;
   position: absolute;
   inset: 0% 0% 0% auto;
@@ -146,10 +146,39 @@ pre code {
   background: rgba(0, 0, 0, 0.1);
 }
 
-.tech-block-content span{
+.tech-block-content span, .project-carousal span {
   font-size: 14px;
   color: #00000059;
   font-weight: 600;
+}
+
+/* Carousel */
+
+.carousel-arrow {
+  position: absolute !important;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.5) !important;
+  border-radius: 50% !important;
+  color: white !important;
+  width: 20px;
+  height: 20px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-arrow {
+  left: 5px;
+}
+
+.right-arrow {
+  right: 5px;
+}
+
+.project-carousal {
+  padding: 0px !important;
 }
 
 @media (max-width: 767px) {
@@ -193,5 +222,9 @@ pre code {
   .container {
     margin: auto;
     padding: 0 15px;
+  }
+
+  .project-carousal{
+    height: 560px;
   }
 }

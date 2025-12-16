@@ -20,7 +20,7 @@ const AboutSection = () => {
 </html>`;
   return (
     <>
-      <div className="about flex flex-col gap-2 container w-[880px]">
+      <div className="about flex flex-col gap-2 container max-w-[880px]">
         <div className="firstRow flex items-center justify-center gap-2 content-style">
           <div className="left basis-1/2 bg-[#f7f7f7] rounded-4xl p-6">
             <h2 className="max-w-[320px] leading-10">
@@ -121,7 +121,7 @@ const AboutSection = () => {
               </div>
               <h3>Exploring Next.js & Rust</h3>
             </div>
-            <div className="growth-card-image-wrapper w-[250px] h-[250px]">
+            <div className="growth-card-image-wrapper max-w-[250px] h-[250px]">
               <img
                 src="/images/avatar3.avif"
                 alt="avatar3"
