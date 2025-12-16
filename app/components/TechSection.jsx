@@ -35,16 +35,43 @@ const TechSection = () => {
     },
   ];
 
+  const toolsList = [
+    {
+      name: "Azure",
+      description: "For building fast, interactive UIs",
+      icon: <Icon icon="devicon:azuredevops" width="40" height="40" />,
+    },
+    {
+      name: "Git & Github",
+      description: "For building fast, interactive UIs",
+      icon: <Icon icon="devicon:git" width="40" height="40" />,
+    },
+  ]
+
+  const designList = [
+    {
+      name: "Figma",
+      description: "For building fast, interactive UIs",
+      icon: <Icon icon="devicon:figma" width="40" height="40" />,
+    },
+     {
+      name: "Notion",
+      description: "For building fast, interactive UIs",
+      icon: <Icon icon="devicon:notion" width="40" height="40" />,
+    },
+  ]
+
   const frontEnd = list.slice(0,3)
   const backEnd = list.slice(3,6)
+  
   return (
     <>
       <div className="tech-section container max-w-[880px]">
         <div className="tech-section-header content-style flex flex-col">
           <p className="text-xs text-[#00000059] font-semibold">TECH STACK</p>
-          <h3>What I Use</h3>
+          <h2>What I Use</h2>
         </div>
-        <div className="tech-section-content mt-12 flex flex-col">
+        <div className="tech-section-content mt-12 flex flex-col gap-12">
           <div className="row1 flex items-start gap-8">
             <div className="left basis-1/2 ">
               <p className="tech-header">Frontend</p>
@@ -79,7 +106,40 @@ const TechSection = () => {
               </div>
             </div>
           </div>
-          <div></div>
+          <div className="row2 flex items-start gap-8">
+            <div className="left basis-1/2 ">
+              <p className="tech-header">Tools & DevOps</p>
+              <div className="tech-list">
+                {toolsList.map((item, index) => (
+                  <div className="tech-blocks" key={index}>
+                    <div className="tech-icon-wrapper">
+                        {item.icon}
+                    </div>
+                    <div className="tech-block-content">
+                        <p>{item.name}</p>
+                        <span>{item.description}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="right basis-1/2 ">
+              <p className="tech-header">Design & Workflow</p>
+              <div className="tech-list">
+                {designList.map((item, index) => (
+                  <div className="tech-blocks" key={index}>
+                    <div className="tech-icon-wrapper">
+                        {item.icon}
+                    </div>
+                    <div className="tech-block-content">
+                        <p>{item.name}</p>
+                        <span>{item.description}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

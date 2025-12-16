@@ -23,6 +23,13 @@ const HomePage = () => {
           <Spacer/>
           <Spacer/>
           <TechSection/>
+          <Spacer/>
+          <Spacer/>
+          <Spacer/>
+          <ProjectSection />
+          <Spacer/>
+          <Spacer/>
+          <Spacer/>
         </div>
       </main>
     </>
