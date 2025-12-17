@@ -29,7 +29,7 @@ const AchievementsSection = () => {
           <div className="achievements-list md:flex flex-col gap-5"> 
                 {
                     achivementsList.map((item, index) => (
-                        <div className="achievements-block bg-[#f7f7f7] ">
+                        <div className="achievements-block bg-[#f7f7f7]" key={index}>
                             {item.number}
                         </div>
                     ))
