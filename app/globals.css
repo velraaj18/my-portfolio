@@ -181,6 +181,13 @@ pre code {
   padding: 0px !important;
 }
 
+.achievements-block {
+  height: 296px;
+  padding-top: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
 @media (max-width: 767px) {
   .content-style h1 {
     font-size: 32px;
