@@ -29,7 +29,7 @@ const AchievementsSection = () => {
           <div className="achievements-list md:flex flex-col gap-5"> 
                 {
                     achivementsList.map((item, index) => (
-                      <div
+                        <div
                         key={index}
                         className={`achievements-block flex bg-[#f7f7f7] gap-20 rounded-4xl ${index % 2 !== 0 ? "flex-row-reverse" : ""}`} >
                         <div className="image-wrapper">
