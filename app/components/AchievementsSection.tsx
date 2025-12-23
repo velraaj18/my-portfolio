@@ -26,7 +26,7 @@ const AchievementsSection = () => {
           <h2>Little Big Wins</h2>
         </div>
         <div className="achievements-content md: mt-10">
-          <div className="achievements-list md:flex flex-col gap-5"> 
+          <div className="achievements-list flex flex-col gap-5"> 
                 {
                     achivementsList.map((item, index) => (
                         <div

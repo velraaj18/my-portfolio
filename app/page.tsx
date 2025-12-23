@@ -7,6 +7,7 @@ import AboutSection from "./components/AboutSection";
 import ProjectSection from "./components/ProjectSection";
 import TechSection from "./components/TechSection";
 import AchievementsSection from "./components/AchievementsSection";
+import FooterSection from "./components/FooterSection";
 
 const HomePage = () => {
   return (
@@ -34,6 +35,8 @@ const HomePage = () => {
           <AchievementsSection/>
           <Spacer/>
           <Spacer/>
+          <Spacer/>
+          <FooterSection/>
           <Spacer/>
         </div>
       </main>

@@ -21,8 +21,8 @@ const AboutSection = () => {
   return (
     <>
       <div className="about flex flex-col gap-2 container max-w-[880px]">
-        <div className="firstRow flex items-center justify-center gap-2 content-style">
-          <div className="left basis-1/2 bg-[#f7f7f7] rounded-4xl p-6">
+        <div className="firstRow flex flex-col md:flex-row items-stretch gap-2 content-style">
+          <div className="left w-full md:basis-1/2 bg-[#f7f7f7] rounded-4xl p-6">
             <h2 className="max-w-[320px] leading-10">
               Full-stack developer{" "}
               <span className="">with a love for clean UI and fast apps</span>{" "}
@@ -35,7 +35,7 @@ const AboutSection = () => {
               />
             </div>
           </div>
-          <div className="right basis-1/2 flex flex-col gap-2">
+          <div className="right w-full md:basis-1/2 flex flex-col gap-2">
             <div className="basis-1/2 bg-[#f7f7f7] rounded-4xl">
               <div className="px-5 pt-5">
                 <span className="text-[#00000080] text-xs">Based In</span>
@@ -103,17 +103,17 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="secondRow flex items-center justify-center gap-2 content-style ">
-          <div className="left basis-1/3 bg-[#f7f7f7] rounded-4xl px-7 py-8">
-            <div className="content flex flex-col items-start justify-between aspect-[1]">
+        <div className="secondRow flex flex-col content-style md:flex-row items-stretch justify-center gap-2 ">
+          <div className="left w-full md:basis-1/3 bg-[#f7f7f7] rounded-4xl px-7 py-8">
+            <div className="content flex flex-col items-start justify-between aspect-auto md:aspect-[1]">
               <div className="pill rounded-4xl">
                 <span className="text-[#00000080] text-xs">What I Do</span>
               </div>
               <h3>Focused on fast builds, clean code, and smart design</h3>
             </div>
           </div>
-          <div className="right flex items-end basis-2/3 bg-[#f7f7f7] rounded-4xl px-7 pt-8">
-            <div className="growth-card-content flex flex-col items-start justify-between aspect-[1] pb-7">
+          <div className="right w-full md:basis-2/3 flex items-end bg-[#f7f7f7] rounded-4xl px-5 py-6 md:px-7 md:pt-8">
+            <div className="growth-card-content flex flex-col items-start justify-between pb-7 aspect-auto md:aspect-[1] gap-12 md:gap-0">
               <div className="pill rounded-4xl">
                 <span className="text-[#00000080] text-xs">
                   Always Learning
