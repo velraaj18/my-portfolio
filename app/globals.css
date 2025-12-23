@@ -14,7 +14,7 @@ h2 > span {
 
 .container {
   margin: auto;
-  padding: 0 15px;
+  padding: 0 40px;
 }
 
 .location-images-wrapper {
@@ -111,6 +111,10 @@ pre code {
   padding: 5px 10px 5px 10px;
 }
 
+.tech-section {
+  padding: 0px 28px;
+}
+
 .tech-section-content p {
   font-size: 14px;
   font-weight: 600;
@@ -199,6 +203,15 @@ pre code {
     font-weight: 600;
     margin: 10px 0;
   }
+
+  .content-style h3 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .container{
+    padding: 0px 24px 0px 24px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -228,7 +241,7 @@ pre code {
 
   .container {
     margin: auto;
-    padding: 0 15px;
+    padding: 0px 40px;
   }
 
   .project-carousal{
